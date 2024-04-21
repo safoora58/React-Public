@@ -1,5 +1,15 @@
-.container{
-    background-color: black;
-    border: 1px solid #E5E5E5;
+.nav-btn-container {
+  padding: 1.7rem 0px;
+  cursor: pointer;
 }
 
+.nav-btn-container:hover {
+  color: #5234f9;
+}
+
+.nav-btn {
+  text-decoration: none;
+  
+  padding: 5px 10px;
+  color: inherit;
+}

@@ -1,11 +1,12 @@
 import './App.css';
 import NavbarBtn from './Components/NavbarBtn/NavbarBtn';
+import Header   from './Components/Header/Header'
 
 function App() {
-  const navbarBtnProps = { name: 'Shop' };
+  
   return (
     <div className="app-container">
-      <NavbarBtn {...navbarBtnProps}></NavbarBtn>
+          <Header></Header>
     </div>
   );
 }

@@ -4,7 +4,7 @@ import './Logo.css'
 export default function Logo() {
     return (
         <div>
-            Logo
+            <p>Shapely Demo</p>
         </div>
     )
 }

@@ -1,11 +1,12 @@
 import './NavbarBtn.css'
 
 function NavbarBtn(props) {
-    let { name, children } = props
+    let { text, children } = props
 
     return (
-        <div className="container">
-            <button>{name}</button>
+        <div className="nav-btn-container">
+            <a href="#" className='nav-btn'>{text}</a>
+            {children}
         </div>
 
 
