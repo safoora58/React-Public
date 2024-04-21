@@ -2,10 +2,10 @@ import './App.css';
 import NavbarBtn from './Components/NavbarBtn/NavbarBtn';
 
 function App() {
-  const navbarBtnProps = { name: 'reza', family: 'bazdaran', age: 40, job: 'web developer' };
+  const navbarBtnProps = { name: 'Shop' };
   return (
     <div className="app-container">
-      <NavbarBtn {...navbarBtnProps} />
+      <NavbarBtn {...navbarBtnProps}></NavbarBtn>
     </div>
   );
 }
