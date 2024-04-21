@@ -10,7 +10,10 @@ export default function SearchBar() {
     <div className='searchbar-container'>
 
       <span class="material-icons">search</span>
-      <div className='search-input'></div>
+      <div className='search-box'>
+        <input type="text" placeholder='TypeHere'/>
+        <button>Search</button>
+      </div>
 
     </div>
   )
