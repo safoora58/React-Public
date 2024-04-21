@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Public/static/css/main.9464bc5b.css",
-    "main.js": "/React-Public/static/js/main.84546921.js",
+    "main.css": "/React-Public/static/css/main.ad32aeaa.css",
+    "main.js": "/React-Public/static/js/main.7b6929e9.js",
     "static/js/453.eebb8bdc.chunk.js": "/React-Public/static/js/453.eebb8bdc.chunk.js",
     "static/media/material-icons-two-tone.woff": "/React-Public/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/material-icons-two-tone.woff2": "/React-Public/static/media/material-icons-two-tone.4ef4218c522f1eb6b5b1.woff2",
@@ -14,12 +14,12 @@
     "static/media/material-icons-sharp.woff2": "/React-Public/static/media/material-icons-sharp.219aa9140e099e6c72ed.woff2",
     "static/media/material-icons.woff2": "/React-Public/static/media/material-icons.0c35d18bf06992036b69.woff2",
     "index.html": "/React-Public/index.html",
-    "main.9464bc5b.css.map": "/React-Public/static/css/main.9464bc5b.css.map",
-    "main.84546921.js.map": "/React-Public/static/js/main.84546921.js.map",
+    "main.ad32aeaa.css.map": "/React-Public/static/css/main.ad32aeaa.css.map",
+    "main.7b6929e9.js.map": "/React-Public/static/js/main.7b6929e9.js.map",
     "453.eebb8bdc.chunk.js.map": "/React-Public/static/js/453.eebb8bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9464bc5b.css",
-    "static/js/main.84546921.js"
+    "static/css/main.ad32aeaa.css",
+    "static/js/main.7b6929e9.js"
   ]
 }
