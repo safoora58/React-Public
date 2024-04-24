@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-Public/static/css/main.b2a8bc20.css",
-    "main.js": "/React-Public/static/js/main.6f7ebdbf.js",
+    "main.css": "/React-Public/static/css/main.37af7dc7.css",
+    "main.js": "/React-Public/static/js/main.289d8839.js",
     "static/js/453.eebb8bdc.chunk.js": "/React-Public/static/js/453.eebb8bdc.chunk.js",
     "static/media/material-icons-two-tone.woff": "/React-Public/static/media/material-icons-two-tone.3baa5b8f3469222b822d.woff",
     "static/media/img1.jpg": "/React-Public/static/media/img1.3176408e675c5314741e.jpg",
@@ -17,12 +17,12 @@
     "static/media/material-icons-sharp.woff2": "/React-Public/static/media/material-icons-sharp.219aa9140e099e6c72ed.woff2",
     "static/media/material-icons.woff2": "/React-Public/static/media/material-icons.0c35d18bf06992036b69.woff2",
     "index.html": "/React-Public/index.html",
-    "main.b2a8bc20.css.map": "/React-Public/static/css/main.b2a8bc20.css.map",
-    "main.6f7ebdbf.js.map": "/React-Public/static/js/main.6f7ebdbf.js.map",
+    "main.37af7dc7.css.map": "/React-Public/static/css/main.37af7dc7.css.map",
+    "main.289d8839.js.map": "/React-Public/static/js/main.289d8839.js.map",
     "453.eebb8bdc.chunk.js.map": "/React-Public/static/js/453.eebb8bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2a8bc20.css",
-    "static/js/main.6f7ebdbf.js"
+    "static/css/main.37af7dc7.css",
+    "static/js/main.289d8839.js"
   ]
 }
