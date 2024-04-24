@@ -4,7 +4,9 @@ import './Logo.css'
 export default function Logo() {
     return (
         <div>
-            <p>Shapely Demo</p>
+            <p>
+                <a href="https://colorlibhub.com/shapely/">Shapely Demo</a>
+            </p>
         </div>
     )
 }

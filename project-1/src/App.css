@@ -80,12 +80,14 @@
 }
 
 .parallax-custom2 {
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url(../public/images/img4.jpg);
   background-size: cover;
+  background-attachment: fixed;
   background-position-y: 80%;
   height: 50vh;
 }
@@ -140,3 +142,7 @@
   cursor: pointer;
   padding: 2rem;
 }
+/* 
+.parallax2-container {
+  position: relative;
+} */

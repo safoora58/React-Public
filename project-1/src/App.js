@@ -5,6 +5,7 @@ import Parallax from './Components/Parallax/Parallax'
 import Main from './Components/Main/Main'
 import Button from './Components/Button/Button';
 import ImagePost from './Components/ImagePost/ImagePost'
+import Clients from './Components/Clients/Clients'
 
 function App() {
   const caption1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus imperdiet rhoncus porta. Ut quis sem quis purus lobortis dictum. Aliquam nec dignissim nisl. Vivamus cursus feugiat sapien, eget tincidunt leo ornare quis."
@@ -21,6 +22,12 @@ function App() {
     'https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1451186859696-371d9477be93-1-1.jpg',
     'https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1448518184296-a22facb4446f-1-1.jpg'
   ]
+  const person = [
+    { name: 'Aigars Silkalns', img: 'https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/Aigars-Silkalns-150x150.jpg', description: 'Nunc sit amet lobortis nulla. Nunc ullamcorper, mi id luctus dictum, augue tortor dictum ipsum, nec congue arcu lorem in nisl. Duis neque lacus, viverra non mauris ac, pharetra rhoncus libero. Aliquam varius viverra ex, in venenatis magna ornare sit amet. Integer varius sit amet turpis eu ullamcorper.' },
+    // { name: 'John Doe', img: 'https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/mike-muller-150x150.jpg', description: 'Integer ut rutrum nulla, sit amet fringilla nisi. Nam nisl velit, vehicula at nibh sed, porttitor sollicitudin ante. Sed justo augue, vestibulum ut efficitur vitae, euismod et justo. Mauris sed mattis ante. Ut ligula lectus, consequat vitae neque ac, gravida hendrerit ante.' }
+
+  ]
+  const paralell2 = document.querySelector('.parallax-custom2')
 
   return (
     <div className="app-container">
@@ -50,22 +57,27 @@ function App() {
           return (<ImagePost imageSrc={item} />)
         })}
       </div>
-
-      <div className='parallax-custom2'>
-        <p className='parallax-custom-title'>What Our Customers Say</p>
-        <p className='parallax-custom-caption'>Nunc sit amet lobortis nulla. Nunc ullamcorper, mi id luctus dictum, augue tortor dictum ipsum, nec congue arcu lorem in nisl. Duis neque lacus, viverra non mauris ac, pharetra rhoncus libero. Aliquam varius viverra ex, in venenatis magna ornare sit amet. Integer varius sit amet turpis eu ullamcorper.</p>
-        <div className='person'>
-          <div className='row'>
-            <span className='person-prev'>⟨</span>
-            <span className='person-img'><img src="https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/Aigars-Silkalns-150x150.jpg" alt="" /></span>
-            <span className='person-next'>⟩</span>
-          </div>
-          
-            <span className='person-name'>Aigars Silkalns</span>
-          
-
-        </div>
+      <div className='parallax2-container'>
+        {
+          person.map((item, index) => {
+            return (
+              <div className='parallax-custom2'>
+                <p className='parallax-custom-title'>What Our Customers Say</p>
+                <p className='parallax-custom-caption'>{item.description}</p>
+                <div className='person'>
+                  <div className='row'>
+                    <span className='person-prev'>⟨</span>
+                    <span className='person-img'><img src={item.img} alt="" /></span>
+                    <span className='person-next'>⟩</span>
+                  </div>
+                  <span className='person-name'>{item.name}</span>
+                </div>
+              </div>
+            )
+          })
+        }
       </div>
+        <Clients/>
 
     </div>
   );

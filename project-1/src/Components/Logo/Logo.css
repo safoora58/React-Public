@@ -1,3 +1,9 @@
-p:nth-child(1){
-    font-size: x-large;
+p:nth-child(1) {
+  font-size: x-large;
+}
+
+a {
+  all: unset;
+  opacity: 0.6;
+  cursor: pointer;
 }
