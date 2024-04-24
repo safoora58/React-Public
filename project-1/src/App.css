@@ -80,8 +80,8 @@
 }
 
 .parallax-custom2 {
-  /* position: absolute; */
-  display: flex;
+  position: absolute;
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -142,7 +142,12 @@
   cursor: pointer;
   padding: 2rem;
 }
-/* 
+
 .parallax2-container {
   position: relative;
-} */
+  height: 50vh;
+}
+
+.parallax-custom2:first-child {
+  display: flex;
+}
