@@ -1,0 +1,28 @@
+img {
+  width: 100%;
+}
+section {
+  padding: 5rem;
+  margin: auto;
+  max-width: 80%;
+  display: grid;
+  grid-gap: 8rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+p.title {
+  margin: 4rem auto;
+  font-size: xx-large;
+}
+p.desc {
+  font-size: large;
+  opacity: 0.5;
+}
+.Button{
+    margin-top: 2rem !important;
+}
+.btn1:hover {
+  background-color: #5d47d7 !important;
+  color: white !important;
+  
+}

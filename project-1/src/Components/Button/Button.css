@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: 2px solid;
+  cursor: pointer;
+  font-size: large;
+  width: 14em;
+  height: 3em;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: white !important;
+  color: black !important;
+  border-color: white;
+  transition: all 0.3s ease-in-out;
+}

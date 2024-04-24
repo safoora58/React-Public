@@ -1,9 +1,74 @@
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
 }
 
 .app-container {
-    
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.Parallax:nth-of-type(2) > .parallax-img {
+  background-image: url(../../project-1/public/images/img1.jpg);
+}
+.Parallax:nth-of-type(4) > .parallax-img {
+  background-image: url(../../project-1/public/images/img3.jpg) !important;
+  height: 50vh !important;
+}
+
+.parallax-custom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-custom-title {
+  margin-top: 3rem;
+  color: black;
+  font-size: 2.5rem !important;
+  font-weight: lighter;
+}
+
+.parallax-custom-caption {
+  color: black;
+  font-size: large;
+  line-height: 2rem;
+  text-align: center;
+  padding: 2rem;
+  opacity: 0.6;
+}
+
+.parallax-custom .buttons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.Button:nth-child(1) :hover {
+  border-color: #5a48cd !important;
+  background-color: #5a48cd !important;
+  color: white !important;
+}
+
+.image-res {
+  max-width: 70%;
+  margin: 3rem auto;
+}
+
+.projects {
+  background-color: #0e1015;
+  color: white;
+  text-align: center;
+  width: 100%;
+}
+
+.projects-title {
+  padding-top: 4rem;
+}
+
+.projects-caption {
+  padding: 1rem;
 }

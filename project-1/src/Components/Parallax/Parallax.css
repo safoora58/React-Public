@@ -1,0 +1,38 @@
+.Parallax {
+}
+.parallax-img {
+  /* background-image: url(../../../../project-1/public/images/img1.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-title {
+  color: white;
+  font-size: 4rem !important;
+}
+
+.parallax-caption {
+  color: white;
+  font-size: large;
+  line-height: 2rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 1rem;
+}
+
+.Button:nth-child(1) :hover {
+  border-color: #5a48cd !important;
+  background-color: #5a48cd !important;
+  color: white !important;
+}
