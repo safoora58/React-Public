@@ -81,7 +81,7 @@
 
 .parallax-custom2 {
   position: absolute;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -90,6 +90,8 @@
   background-attachment: fixed;
   background-position-y: 80%;
   height: 50vh;
+  
+  
 }
 
 .parallax-custom2 > .parallax-custom-title {

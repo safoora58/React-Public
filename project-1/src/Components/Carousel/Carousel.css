@@ -1,0 +1,12 @@
+.Carousel {
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 50%;
+  /* transform: translateX(-100%); */
+}

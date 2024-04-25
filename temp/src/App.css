@@ -1,0 +1,18 @@
+.carousel {
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden; /* Prevent horizontal overflow for some layouts */
+}
+
+.carousel-items {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transitions */
+}
+
+.carousel-item {
+  flex: 0 0 25%; /* Adjust width based on number of items */
+  height: 300px; /* Adjust height */
+  margin-right: 10px;
+  text-align: center;
+  background-color: #f0f0f0; /* Optional background */
+}

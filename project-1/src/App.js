@@ -7,6 +7,7 @@ import Main from './Components/Main/Main'
 import Button from './Components/Button/Button';
 import ImagePost from './Components/ImagePost/ImagePost'
 import Clients from './Components/Clients/Clients'
+import Carousel from "./Components/Carousel/Carousel"
 
 
 function App() {
@@ -95,6 +96,8 @@ function App() {
         }
       </div>
       <Clients />
+
+      <Carousel/>
 
     </div>
   );
