@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.carousel {
+  width: 500px;
+  height: 300px;
+  border: 3px solid lightcoral;
+  overflow: hidden;
+  margin: 2rem auto;
+}
+
+.carousel-inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.carousel-item {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  flex: 1 0 100%;
+  color: white;
+  transition: all 2000ms ease-in-out;
+  background-color: black;
+  
+}
+/* 
+.carousel-item:nth-child(1) {
+  background-color: darkred;
+}
+.carousel-item:nth-child(2) {
+  background-color: darkblue;
+}
+.carousel-item:nth-child(3) {
+  background-color: darkgreen;
+}
+.carousel-item:nth-child(4) {
+  background-color: darkgoldenrod;
+}
+.carousel-item:nth-child(5) {
+  background-color: darkolivegreen;
+} */
+
+.active {
+  transition: all 0.5s ease;
+}
