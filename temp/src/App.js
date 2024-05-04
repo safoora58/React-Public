@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
-import User from './User/User'
-import Counter from './Counter/Counter'
+import User from './Components/User/User'
+import Counter from './Components/Counter/Counter'
 
 
 function App() {
