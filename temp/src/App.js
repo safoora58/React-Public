@@ -4,6 +4,7 @@ import User from "./Components/User/User";
 import Counter from "./Components/Counter/Counter";
 import Navbar from "./Components/Navbar/Navbar";
 import Form from "./Components/Form/Form";
+import FormRegister from './Components/FormRegister/FormRegister'
 
 export default class App extends Component {
   state = {
@@ -20,13 +21,10 @@ export default class App extends Component {
     return (
       <div className="App">
         <Navbar></Navbar>
-
-        {this.state.users.map((item, index) => (
-          <User {...item}></User>
-        ))}
-
-        <Form name="Ali"></Form>
-        <Counter {...this.state.counter}></Counter>
+        {/* {this.state.users.map((item, index) => (<User {...item}></User>))} */}
+        {/* <Form name="Ali"></Form> */}
+        {/* <Counter {...this.state.counter}></Counter> */}
+        <FormRegister></FormRegister>
       </div>
     );
   }

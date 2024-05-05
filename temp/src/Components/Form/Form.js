@@ -37,12 +37,17 @@ export default class Form extends Component {
 
         })
     }
+    passwordHandler = (event) => {
+        this.setState({
+            password : event.target.value
+        })
+    }
     render() {
         return (
             <div className='Form'>
                 <form action="">
                     <input type="text" value={this.state.name} placeholder='Name' onChange={this.changeValue} />
-                    <input type="password" value={this.state.password} />
+                    <input type="password" value={this.state.password} onChange={this.passwordHandler}/>
                     <input type="checkbox" checked={this.state.checked} onChange={this.checkedHandler.bind(this)} />
                 </form>
             </div>

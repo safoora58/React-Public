@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.FormRegister {
+  background-color: #75b852;
+  display: grid;
+  place-items: center;
+  min-height: 92vh;
+}
+
+.FormRegister form {
+  padding: 1rem;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+input {
+  padding: 1rem;
+}
+input[type="submit"] {
+  background-color: #4caf52;
+  color: white;
+}
+
+input:not([type="submit"]) {
+  background-color: #f2f2f2;
+}
+
+span{
+  color: red;
+}
