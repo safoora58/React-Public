@@ -10,9 +10,8 @@ export default class FormRegister extends Component {
             firstName: '',
             lastName: '',
             email: '',
-            allValid: false
-
-
+            allValid: false,
+            confirmed: false
         }
     }
 
@@ -41,13 +40,39 @@ export default class FormRegister extends Component {
     }
 
     allValidChecker = () => {
-        if (this.state.firstName && this.state.lastName && this.state.email) { this.setState({ allValid: true }) }
+        if (this.state.firstName && this.state.lastName && this.state.email) {
+            this.setState({
+                allValid: true,
+                confirmed: true
+            })
+        }
     }
 
-    fieldChecker = (field) => {
+    fieldChecker = (field, name) => {
         if (field === '') {
             return (
-                <span>This field is required</span>
+                <span>{name} is required</span>
+            )
+        }
+    }
+    confirmChecker = () => {
+        if (this.state.confirmed) {
+
+            setTimeout(() => {
+                this.setState({
+                    submitted: false,
+                    firstName: '',
+                    lastName: '',
+                    email: '',
+                    allValid: false,
+                    confirmed: false
+                })
+
+            }, 3000);
+            
+            return (
+                <div className='confirm-box show'>Confirmed !</div>
+                
             )
         }
     }
@@ -56,12 +81,13 @@ export default class FormRegister extends Component {
         return (
             <div className='FormRegister'>
                 <form action="" onSubmit={this.submitHandler}>
+                    {this.state.submitted && this.confirmChecker()}
                     <input type="text" placeholder='First Name' value={this.state.firstName} onChange={this.firstNameHandler} />
-                    {this.state.submitted && this.fieldChecker(this.state.firstName)}
+                    {this.state.submitted && this.fieldChecker(this.state.firstName, 'firstName')}
                     <input type="text" placeholder='Last Name' value={this.state.lastName} onChange={this.lastNameHandler} />
-                    {this.state.submitted && this.fieldChecker(this.state.lastName)}
+                    {this.state.submitted && this.fieldChecker(this.state.lastName, 'lastName')}
                     <input type="email" placeholder='Email' value={this.state.email} onChange={this.emailHandler} />
-                    {this.state.submitted && this.fieldChecker(this.state.email)}
+                    {this.state.submitted && this.fieldChecker(this.state.email, 'email')}
                     <input type="submit" value="Register" />
                 </form>
             </div>

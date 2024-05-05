@@ -14,6 +14,7 @@
   padding: 1rem;
   background-color: white;
   border-radius: 0.5rem;
+  position: relative;
 }
 
 input {
@@ -22,12 +23,43 @@ input {
 input[type="submit"] {
   background-color: #4caf52;
   color: white;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover{
+  background-color: #3c8b42;
+}
+input[type="submit"]:active{
+  background-color: #0ea71a;
+  box-shadow : 0 0  1px 1px inset;
 }
 
 input:not([type="submit"]) {
   background-color: #f2f2f2;
 }
 
-span{
+
+span {
   color: red;
+}
+.confirm-box {
+  background-color: rgb(43, 129, 228);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem;
+  color: white;
+  user-select: none;
+  width: 100%;
+}
+
+.confirm-box.hide {
+  opacity: 0;
+  z-index: -2;
+  transition: all 1s;
+}
+.confirm-box.show {
+  opacity: 1;
+  z-index: 1;
+  transition: all 1s;
 }
