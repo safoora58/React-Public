@@ -1,26 +1,4 @@
-.User {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  background-color: solid 1px #f1f1f1;
-  box-shadow: -5px 4px 5px 10px #f1f1f1;
-  width: 600px;
-  height: 200px;
-  margin: 2rem auto;
-}
-h1 {
-  color: red;
-}
-
-h2 {
-  color: green;
-}
-
-h3 {
-  color: blue;
-}
-
-button {
-    padding: 0.5rem 2rem;
-    font-weight: bolder;
+.User button {
+    background-color: rgba(3, 3, 71, 0.555);
+    color: darkblue;
 }

@@ -1,45 +1,31 @@
 import React, { Component } from 'react'
+import './User.css'
+import { name } from 'tar/types'
 
 export default class User extends Component {
-
-
     constructor(props) {
-
-        super(props);
+        super(props)
         this.state = {
-            name: props.name,
-            age: props.age,
-            email: props.email,
-            num: 0
+
+            count: props.age,
+            
+
         }
-
-
     }
-    // clickHandler = () => {
-    //     this.setState({
-    //         num : this.state.num + 1,
-    //     })
+    handleClick = () => {
+        this.setState(prevState => ({
+            count: prevState.count + 1
 
-    // }
-
-
-    clickHandler = () => {
-        this.setState((prevState) => {
-            return{
-                num : prevState.num + 1
-            }
-        })
+        }));
+        console.log(this.state.count + 1); 
     }
-
-
-
-
     render() {
         return (
             <div className='User'>
-                <div>{this.state.name}</div>
-                <h1>{this.num}</h1>
-                <h2 onClick={this.clickHandler}>{this.state.num}</h2>
+                <h1 >{this.props.name}</h1>
+                <h2>{this.state.count}</h2>
+                <h3>{this.props.email}</h3>
+                <button onClick={this.handleClick}>Add Age</button>
             </div>
         )
     }
