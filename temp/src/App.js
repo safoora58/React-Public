@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Form from "./Components/Form/Form";
 import FormRegister from './Components/FormRegister/FormRegister'
 import Quiz from "./Components/Quiz/Quiz";
+import TicketBuy from "./Components/TicketBuy/TicketBuy";
 
 export default class App extends Component {
   state = {
@@ -26,7 +27,8 @@ export default class App extends Component {
         {/* <Form name="Ali"></Form> */}
         {/* <Counter {...this.state.counter}></Counter> */}
         {/* <FormRegister></FormRegister> */}
-        <Quiz></Quiz>
+        {/* <Quiz></Quiz> */}
+        <TicketBuy></TicketBuy>
       </div>
     );
   }

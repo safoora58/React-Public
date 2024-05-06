@@ -1,0 +1,61 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: black;
+}
+.TicketBuy {
+  background-image: url(../../../public/images/cloud.webp);
+  min-height: 100vh;
+  min-width: 100vw;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.TicketBuy > .container {
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 4rem;
+  background-color: rgba(75, 71, 71, 0.26);
+  padding: 4rem;
+  border-radius: 2rem;
+}
+
+.TicketBuy > .container .item {
+  flex: 1 0 max(300px, 40%);
+  margin: 0px;
+  color: black;
+  padding: 1rem;
+  height: 3rem;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 0rem 1rem;
+}
+
+.TicketBuy button {
+  background-color: #FFD602;
+  padding: 0.7rem 2rem;
+  width: fit-content;
+  color: black;
+  border: none;
+  margin: auto;
+  user-select: none;
+}
+
+
+.TicketBuy button:hover {
+  background-color: #ffcc00;
+  transition: all 0.2s;
+}
+
+.TicketBuy button:active{
+  background-color: #a58814;
+  color: white;
+  transition: all 0.2s;
+}
