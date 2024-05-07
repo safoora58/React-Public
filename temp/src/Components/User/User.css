@@ -1,4 +1,22 @@
-.User button {
-    background-color: rgba(3, 3, 71, 0.555);
-    color: darkblue;
+*{
+    padding: 0;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.User {
+  display: flex;
+  /* gap: 5rem; */
+  margin: 2rem auto;
+
+  align-items: center;
+  padding: 1rem;
+  border: solid 2px;
+  width: 500px;
+  border-radius: 2rem;
+}
+.User button.btn {
+  text-align: center;
+  margin: auto;
+  display: inline-block;
+  width: 150px;
 }

@@ -1,32 +1,32 @@
-import React, { Component } from 'react'
-import './User.css'
-import { name } from 'tar/types'
+import React, { Component } from "react";
+import "./User.css";
 
 export default class User extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
+  constructor(props) {
+    super(props);
+    this.state = {
+      username: this.props.name,
+      age: this.props.age,
+      email: this.props.email,
+    };
+  }
 
-            count: props.age,
-            
+  clickHandler = (id) => {
+    console.log(id);
+    this.props.onRemove(id);
+  };
 
-        }
-    }
-    handleClick = () => {
-        this.setState(prevState => ({
-            count: prevState.count + 1
-
-        }));
-        console.log(this.state.count + 1); 
-    }
-    render() {
-        return (
-            <div className='User'>
-                <h1 >{this.props.name}</h1>
-                <h2>{this.state.count}</h2>
-                <h3>{this.props.email}</h3>
-                <button onClick={this.handleClick}>Add Age</button>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="User">
+        <h1>{this.state.username}</h1>
+        <button
+          className="btn"
+          onClick={this.clickHandler.bind(this, this.props.id)}
+        >
+          Remove
+        </button>
+      </div>
+    );
+  }
 }

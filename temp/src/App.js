@@ -4,19 +4,24 @@ import User from "./Components/User/User";
 import Counter from "./Components/Counter/Counter";
 import Navbar from "./Components/Navbar/Navbar";
 import Form from "./Components/Form/Form";
-import FormRegister from './Components/FormRegister/FormRegister'
-import Quiz from "./Components/Quiz/Quiz";
+import FormRegister from "./Components/FormRegister/FormRegister";
+// import Quiz from "./Components/Quiz/Quiz";
 import TicketBuy from "./Components/TicketBuy/TicketBuy";
 
 export default class App extends Component {
   state = {
     users: [
-      { name: "Reza", age: 41, email: "reza@gmail.com" },
-      { name: "Ali", age: 43, email: "ali@gmail.com" },
-      { name: "Mona", age: 36, email: "mona@gmail.com" },
+      { id: 1, name: "Reza", age: 41, email: "reza@gmail.com" },
+      { id: 2, name: "Ali", age: 43, email: "ali@gmail.com" },
+      { id: 3, name: "Mona", age: 36, email: "mona@gmail.com" },
     ],
 
     counter: { start: 7, end: 15 },
+  };
+  removeHandler = (id) => {
+    this.setState({
+      users: this.state.users.filter((user) => user.id !== id),
+    });
   };
 
   render() {
@@ -28,7 +33,15 @@ export default class App extends Component {
         {/* <Counter {...this.state.counter}></Counter> */}
         {/* <FormRegister></FormRegister> */}
         {/* <Quiz></Quiz> */}
-        <TicketBuy></TicketBuy>
+        {/* <TicketBuy></TicketBuy> */}
+
+        {this.state.users.map((user) => (
+          <User
+            key={user.id}
+            {...user}
+            onRemove={this.removeHandler.bind(this, user.id)}
+          ></User>
+        ))}
       </div>
     );
   }
