@@ -18,18 +18,24 @@ export default class User extends Component {
 
   editHandler = (id) => {
     console.log("Editing user with ID:", id);
-    this.props.onEdit(id)
-  }
+
+    this.props.onEdit(id);
+  };
+
+
 
   render() {
     return (
       <div className="User">
         <h1>{this.state.username}</h1>
-        <button className="btn" onClick={this.clickHandler.bind(this, this.props.id)}>Remove</button>
+        <button
+          className="btn"
+          onClick={this.clickHandler.bind(this, this.props.id)}
+        >
+          Remove
+        </button>
         <button onClick={() => this.editHandler(this.props.id)}>Edit</button>
       </div>
     );
   }
 }
-
-
