@@ -6,8 +6,10 @@
   flex-direction: column;
   justify-content: space-evenly;
 }
+
 .AddForm label {
   display: block;
+  margin: 1rem auto;
 }
 
 .AddForm input {
@@ -25,9 +27,46 @@
   color: white;
   cursor: pointer;
 }
+
 .AddForm input[type="submit"]:hover {
   background-color: #e48b0d;
 }
+
 .AddForm input[type="submit"]:active {
   background-color: #d4830a;
+}
+
+.AddForm thead {
+  background-color: rgba(128, 128, 128, 0.349);
+}
+
+.AddForm table {
+  width: 100%;
+}
+
+.AddForm tbody , tr {
+  width: 100%;
+}
+
+.AddForm table :is(td, th) {
+  padding: 1rem;
+  text-align: center;
+}
+
+.AddForm tfoot > tr > td {
+  column-span: all;
+  background-color: rgba(179, 141, 60, 0.527);
+  color: white;
+}
+
+
+.AddForm table tbody tr:nth-child(even) {
+  background-color: rgba(97, 76, 79, 0.089);
+}
+
+
+.AddForm p {
+  color: red;
+  font-size: small;
+  
 }
