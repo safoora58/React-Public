@@ -61,7 +61,7 @@ export default class AddForm extends Component {
       this.setState({
          sent: true ,
          submitted:false
-        })
+        }) 
     }
     else {
       return ('All fields are required');
