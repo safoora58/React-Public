@@ -1,0 +1,33 @@
+.AddForm {
+  width: 80vw;
+  margin: 1rem auto;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.AddForm label {
+  display: block;
+}
+
+.AddForm input {
+  margin: 1rem auto;
+  width: 100%;
+  display: block;
+  padding: 0.8rem;
+  font-size: 1.5rem;
+  border: 2px lightgray solid;
+  border-radius: 0.5rem;
+}
+
+.AddForm input[type="submit"] {
+  background-color: #f49b11;
+  color: white;
+  cursor: pointer;
+}
+.AddForm input[type="submit"]:hover {
+  background-color: #e48b0d;
+}
+.AddForm input[type="submit"]:active {
+  background-color: #d4830a;
+}

@@ -1,0 +1,21 @@
+.Header {
+    display: flex;
+    justify-content: center;
+    align-items: last center;
+    background-color: gray;
+    
+}
+.Header .book-icon {
+  color: #f49b11;
+  font-size: 6rem;
+  
+}
+
+.Header span {
+  color: #f49b11;
+  font-size: 4rem;
+}
+.Header h1 {
+  /* display: inline; */
+  font-size: 4rem;
+}
