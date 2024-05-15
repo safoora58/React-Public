@@ -8,7 +8,7 @@ export default class Header extends Component {
       <div className='Header'>
 
         <Navbar></Navbar>
-        
+        <h1>This is Header</h1>
       </div>
     )
   }

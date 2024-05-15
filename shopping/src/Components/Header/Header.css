@@ -1,0 +1,11 @@
+.Header {
+    background-color: gray;
+    padding-bottom: 4rem;
+
+}
+
+.Header h1 {
+    text-align: center;
+    margin-top: 0.5rem;
+    color: greenyellow;
+}
