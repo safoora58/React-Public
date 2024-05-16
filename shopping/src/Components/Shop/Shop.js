@@ -77,8 +77,8 @@ export default class Shop extends Component {
             return <Product key={product.id} {...product} onAdd={this.addHandler.bind(this,product.id)}></Product>
           })}
         </div>
+        <Portfolio data={this.state.cart} ></Portfolio>
         
-          <Portfolio data={this.state.cart} ></Portfolio>
         
       </div>
     )
