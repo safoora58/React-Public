@@ -77,22 +77,24 @@ export default class Shop extends Component {
             return <Product key={product.id} {...product} onAdd={this.addHandler.bind(this, product.id)}></Product>
           })}
         </div>
-        <div className='Portfolio'>
-          <h1>CART</h1>
-          <div className='cart-header'>
-            <span>Item</span>
-            <span>Price</span>
-            <span>Doing</span>
-          </div>
-          <div className='cart-body'>
-            {this.state.cart.map(item => (
-              <Portfolio key={item.id} {...item} onRemove={this.removeHandler.bind(this, item.id)}></Portfolio>
-            ))}
-          </div>
+        <div className='cart'>
+          <div className='Portfolio'>
+            <h1>CART</h1>
+            <div className='cart-header'>
+              <span>Item</span>
+              <span>Price</span>
+              <span>Doing</span>
+            </div>
+            <div className='cart-body'>
+              {this.state.cart.map(item => (
+                <Portfolio key={item.id} {...item} onRemove={this.removeHandler.bind(this, item.id)}></Portfolio>
+              ))}
+            </div>
 
 
-          <div className='cart-footer'>
-            <button onClick={() => this.setState({ cart: [] })}>Empty Cart</button>
+            <div className='cart-footer'>
+              <button onClick={() => this.setState({ cart: [] })}>Empty Cart</button>
+            </div>
           </div>
         </div>
 

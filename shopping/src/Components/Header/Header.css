@@ -1,6 +1,8 @@
 .Header {
     background-color: gray;
-    padding-bottom: 4rem;
+    padding-bottom: 1.5rem;
+    position: sticky;
+    top:0
 
 }
 

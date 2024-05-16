@@ -31,7 +31,7 @@ export default class Product extends Component {
                 <div className='product-img'><img src={this.state.product.img} alt="picture" /></div>
                 <p className='product-desc'>{this.state.product.description}</p>
                 <div className='product-footer'>
-                    <span className='product-price'>{this.state.product.price}</span>
+                    <span className='product-price'>{this.state.product.price} $</span>
                     <button className='add-btn' onClick={() => this.addHandler(this.state.product.id)}>Add to cart</button>
                 </div>
 

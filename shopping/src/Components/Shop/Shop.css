@@ -1,3 +1,11 @@
+.Shop{
+    position: relative;
+}
+.Shop .cart{
+    padding: 3rem;
+}
+
+
 .Shop .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -5,6 +13,7 @@
     gap: 3rem;
     max-width: 70%;
     margin: 3rem auto;
+    
 
 }
 
