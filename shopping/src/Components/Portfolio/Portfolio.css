@@ -1,0 +1,75 @@
+.Portfolio {
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+
+}
+
+.Portfolio :is(.cart-header, .cart-body, .cart-item) {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    column-gap: 5rem;
+
+}
+
+
+.Portfolio :is(.cart-header>span, .cart-body span) {
+    width: 33%;
+    margin: 2rem auto;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+
+}
+
+.Portfolio :is(.cart-body, .cart-item) {
+    width: 100%;
+    align-items: center;
+}
+
+.Portfolio .cart-item span {
+    border: none !important;
+}
+
+.Portfolio .remove-btn {
+    padding: 1.5rem 3.5rem;
+    font-size: large;
+    font-weight: bold;
+    background-color: rgba(197, 76, 76, 0.601);
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+
+}
+
+.Portfolio .remove-btn:hover {
+    background-color: rgba(197, 76, 76, 0.831);
+    color: white;
+}
+
+.Portfolio .cart-body :is(span:nth-child(1), img) {
+    border-radius: 2rem;
+    overflow: hidden;
+
+}
+
+.Portfolio .cart-footer button {
+    background-color: #54c6f1;
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.Portfolio .cart-footer button:hover {
+    background-color: #3b9cc0;
+    color: white;
+}

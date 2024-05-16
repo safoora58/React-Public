@@ -1,0 +1,13 @@
+.Shop .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 70%;
+    margin: 3rem auto;
+
+}
+
+.Shop .Product {
+    flex: 0 1 max(250px, 25%);
+}
