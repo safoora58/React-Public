@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import './Shop.css'
 import Header from '../Header/Header'
 import Product from '../Product/Product'
-
 import Portfolio from '../Portfolio/Portfolio'
 export default class Shop extends Component {
   constructor(props) {
@@ -15,6 +14,7 @@ export default class Shop extends Component {
           description: 'Good shoe for casual wear',
           price: 2000,
           img: 'images/p1.jpg'
+          
         },
         {
           id: 2,
@@ -51,20 +51,35 @@ export default class Shop extends Component {
           price: 6000,
           img: 'images/p6.jpg'
         }
-      ]
+      ],
+      cart: [{
+        id: 1,
+        title: 'SHOE 1',
+        description: 'Good shoe for casual wear',
+        price: 2000,
+        img: 'images/p1.jpg'
+        
+      }]
     }
+  }
+  addHandler = (id) => {
+    const product = this.state.products.find(product => product.id === id)
+    this.setState({
+      cart : this.state.cart.concat(product)
+    })
   }
   render() {
     return (
       <div className='Shop'>
         <Header></Header>
         <div className='product-list'>
-
           {this.state.products.map(product => {
-            return <Product key={product.id} {...product}></Product>
+            return <Product key={product.id} {...product} onAdd={this.addHandler.bind(this,product.id)}></Product>
           })}
         </div>
-        <Portfolio></Portfolio>
+        
+          <Portfolio data={this.state.cart} ></Portfolio>
+        
       </div>
     )
   }

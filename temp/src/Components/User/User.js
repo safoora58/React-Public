@@ -16,7 +16,7 @@ export default class User extends Component {
     this.props.onRemove(id);
   };
 
-  editHandler = (id) => {
+  editHandler(id) {
     console.log("Editing user with ID:", id);
 
     this.props.onEdit(id);
@@ -34,7 +34,7 @@ export default class User extends Component {
         >
           Remove
         </button>
-        <button onClick={() => this.editHandler(this.props.id)}>Edit</button>
+        <button onClick={() => this.editHandler.bind(this,this.props.id)}>Edit</button>
       </div>
     );
   }
